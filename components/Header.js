@@ -1,3 +1,13 @@
-export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
-}
+import Head from "next/head";
+
+const PageHeader = () => {
+  return (
+    <Head>
+      <title>My page title</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+  );
+};
+
+
+export default PageHeader;
